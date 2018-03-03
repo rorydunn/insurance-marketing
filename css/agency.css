@@ -13,6 +13,29 @@
     padding-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-sm {
+    display: none;
+  }
+  img.img.img-responsive.img-fluid {
+    margin-bottom: 20px;
+  }
+
+  header.masthead .intro-text .intro-description {
+      font-size: 22px !important;
+      line-height: 32px !important;
+  }
+  header.masthead .intro-text .intro-lead-in {
+      font-size: 30px !important;
+  }
+}
+
  .bg-light {
      background-color: #F0F0F0!important;
  }
