@@ -9,6 +9,18 @@
      background: white;
  }
 
+ .row.portfolio {
+    padding-bottom: 40px;
+}
+
+ .bg-light {
+     background-color: #F0F0F0!important;
+ }
+
+ .col-md-6.col-sm-6.portfolio-image {
+    text-align: center;
+}
+
  .navbar-shrink img.logo {
      height: 32px;
  }
