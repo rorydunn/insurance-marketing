@@ -86,9 +86,6 @@ section {
   background: #E78C1E;
   text-shadow: none; }
 
-::selection {
-  background: #E78C1E;
-  text-shadow: none; }
 
 img::selection {
   background: transparent; }
