@@ -67,6 +67,98 @@
 .contact a {
     color: #3097d1;
 }
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+section.call-to-action.text-white.text-center {
+    background: black;
+}
+
+a.learn-more.js-scroll-trigger {
+    margin: 0 auto;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 2px solid #fff;
+    font-size: 30px;
+    color: #fff;
+}
+
+.form-control-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0;
+    border-color: #fff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.intro-description {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .intro-description{
+    line-height: 36px;
+  }
+}
+
+h1.intro-lead-in {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.list-unstyled p {
+    line-height: 1;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
  /* Rory's Edits*/
 
 body {
@@ -191,7 +283,7 @@ header.masthead {
   text-align: center;
   color: white;
   background-image: url("../img/cranes.jpg");
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg");
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8), black), url("../img/cranes.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
