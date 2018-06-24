@@ -81,16 +81,24 @@
             </ul>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
+            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank" novalidate>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Email me when it's ready">
+                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me when it's ready">
                 </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_65a8b74ebf1ced6cb3e4ea24b_eebb98931f" tabindex="-1" value=""></div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary">Submit</button>
                 </div>
               </div>
             </form>
+            <div class="follow-up thank-you">
+              <p>Thank you for your interest in Saleslight.</p>
+            </div>
             <br>
             <a class="learn-more js-scroll-trigger" href="#more"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
           </div>
@@ -155,16 +163,24 @@
             <h2 class="mb-4">Want to be the first to use it?</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
+            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank" novalidate>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Email me when it's ready">
+                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me when it's ready">
                 </div>
+                <div id="mce-responses" class="clear">
+              		<div class="response" id="mce-error-response" style="display:none"></div>
+              		<div class="response" id="mce-success-response" style="display:none"></div>
+              	</div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_65a8b74ebf1ced6cb3e4ea24b_eebb98931f" tabindex="-1" value=""></div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary">Submit</button>
                 </div>
               </div>
             </form>
+            <div class="follow-up thank-you">
+              <p>Thank you for your interest in Saleslight.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -189,6 +205,28 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("form").submit(function(){
+            event.preventDefault();
+            $.ajax({
+                type:'POST',
+                url: 'https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f',
+                crossDomain: true,
+                data: $('#mc-embedded-subscribe-form').serialize(),
+                dataType: 'jsonp',
+                // success: function(data){
+                //     console.log(data);
+                // },
+                // error:function(data){
+                //     console.log(data);
+                // }
+            });
+            $(".mail-form").addClass("thank-you");
+            $(".follow-up").removeClass("thank-you");
+          });
+      });
+    </script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
  /* Rory's Edits*/
+.thank-you {
+  display: none;
+}
 
  nav#mainNav {
      background: white;
