@@ -143,8 +143,12 @@ a.learn-more.js-scroll-trigger {
 }
 
 @media (max-width: 767px) {
-  .intro-description{
-    line-height: 36px;
+  header.masthead{
+    padding-top: 6rem;
+  }
+  .intro-description {
+    line-height: 2.1rem;
+    font-size: 1.6rem;
   }
 }
 
