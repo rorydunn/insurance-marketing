@@ -74,17 +74,16 @@
             <div class="intro-description">
               A new lead generation and prospecting tool for commercial insurance is coming to New England.
             </div>
-            <ul class="list-unstyled">
-              <li><p>Find customers that <b>want to buy insurance.</b></p></li>
-              <li><p>Target customers <b>you know how to work with.</b></p></li>
-              <li><p><b>Grow your business.</b></p></li>
-            </ul>
+            <br>
+            <div class="intro-description">
+              Want to try it for free?
+            </div>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank" novalidate>
+            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank">
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me when it's ready">
+                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me">
                 </div>
                 <div id="mce-responses" class="clear">
                   <div class="response" id="mce-error-response" style="display:none"></div>
@@ -160,18 +159,18 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Want to be the first to use it?</h2>
+            <h2 class="mb-4">Want to try it for free?</h2>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank" novalidate>
+            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank">
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me when it's ready">
+                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me">
                 </div>
                 <div id="mce-responses" class="clear">
-              		<div class="response" id="mce-error-response" style="display:none"></div>
-              		<div class="response" id="mce-success-response" style="display:none"></div>
-              	</div>
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_65a8b74ebf1ced6cb3e4ea24b_eebb98931f" tabindex="-1" value=""></div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary">Submit</button>
@@ -206,26 +205,21 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script>
-      $(document).ready(function(){
-          $("form").submit(function(){
-            event.preventDefault();
-            $.ajax({
-                type:'POST',
-                url: 'https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f',
-                crossDomain: true,
-                data: $('#mc-embedded-subscribe-form').serialize(),
-                dataType: 'jsonp',
-                // success: function(data){
-                //     console.log(data);
-                // },
-                // error:function(data){
-                //     console.log(data);
-                // }
+        $(document).ready(function(){
+            $("form").submit(function(){
+              event.preventDefault();
+              var email = $('#mce-EMAIL').val();
+              $.ajax({
+                  type:'POST',
+                  url: 'https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f',
+                  crossDomain: true,
+                  data: $('#mc-embedded-subscribe-form').serialize(),
+                  dataType: 'jsonp',
+              });
+                $(".mail-form").addClass("thank-you");
+                $(".follow-up").removeClass("thank-you");
             });
-            $(".mail-form").addClass("thank-you");
-            $(".follow-up").removeClass("thank-you");
-          });
-      });
+        });
     </script>
 
     <!-- Plugin JavaScript -->
