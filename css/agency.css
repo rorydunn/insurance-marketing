@@ -9,6 +9,14 @@
      background: white;
  }
 
+ h3.section-subheading.text-muted {
+    margin-bottom: 10px;
+}
+
+.bottom {
+  margin-bottom: 75px;
+}
+
  .row.portfolio {
     padding-bottom: 40px;
 }
@@ -224,7 +232,7 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 240px;
     padding-bottom: 200px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
