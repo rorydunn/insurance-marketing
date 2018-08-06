@@ -12,10 +12,27 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Saleslight.io - Enabling Insurance Sales</title>
+    <!-- Search Engine -->
+    <meta name="description" content="Saleslight is a tool built to help commercial insurance salesman find prospective clients.">
+    <meta name="image" content="https://www.saleslight.io/img/portfolio/search.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Saleslight.io - Enabling Insurance Sales">
+    <meta itemprop="description" content="Saleslight is a tool built to help commercial insurance salesman find prospective clients.">
+    <meta itemprop="image" content="https://www.saleslight.io/img/portfolio/search.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Saleslight.io - Enabling Insurance Sales">
+    <meta name="twitter:description" content="Saleslight is a tool built to help commercial insurance salesman find prospective clients.">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Saleslight.io - Enabling Insurance Sales">
+    <meta name="og:description" content="Saleslight is a tool built to help commercial insurance salesman find prospective clients.">
+    <meta name="og:image" content="https://www.saleslight.io/img/portfolio/search.png">
+    <meta name="og:url" content="https://www.saleslight.io/">
+    <meta name="og:site_name" content="Saleslight">
+    <meta name="og:type" content="website">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/logos/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logos/favicon/favicon-32x32.png">
@@ -76,11 +93,13 @@
         <div class="intro-text">
           <div class="intro-lead-in">Sell More Insurance</div>
           <div class="intro-description">Utilize data to better target potential customers.</div>
-          <a class="btn btn-primary js-scroll-trigger" href="https://app.saleslight.io/register">
+          <a class="btn btn-primary free-trial" href="https://app.saleslight.io/register">
             <span class="upper">Start your free trial today </span>
             <br/>
             <span class="small-text">No credit card required.</span>
           </a>
+          <br>
+          <a class="learn-more js-scroll-trigger" href="#more"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         </div>
       </div>
     </header>
@@ -133,6 +152,45 @@
             <p>Our comprehensive and ever growing database allows you to get detailed information on thousands of businesses to quickly evaluate prospective clients.</p>
           </div>
         </div>
+        <div class="follow-up">
+          <a class="btn btn-primary free-trial" href="https://app.saleslight.io/register">
+            <span class="upper">Start your free trial today </span>
+            <br/>
+            <span class="small-text">No credit card required.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h2 class="mb-4">Want to learn more?</h2>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form action="https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mail-form validate" target="_blank">
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="required" class="form-control form-control-lg" placeholder="Email me">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_65a8b74ebf1ced6cb3e4ea24b_eebb98931f" tabindex="-1" value=""></div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-block btn-lg btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+            <div class="follow-up thank-you">
+              <p>Thank you for your interest in Saleslight.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -155,6 +213,23 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("form").submit(function(){
+            event.preventDefault();
+            var email = $('#mce-EMAIL').val();
+            $.ajax({
+                type:'POST',
+                url: 'https://saleslight.us18.list-manage.com/subscribe/post?u=65a8b74ebf1ced6cb3e4ea24b&amp;id=eebb98931f',
+                crossDomain: true,
+                data: $('#mc-embedded-subscribe-form').serialize(),
+                dataType: 'jsonp',
+            });
+              $(".mail-form").addClass("thank-you");
+              $(".follow-up").removeClass("thank-you");
+          });
+      });
+    </script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
