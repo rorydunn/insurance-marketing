@@ -93,22 +93,81 @@
 }
 
 a.btn.btn-primary.free-trial {
+    font-weight: 600;
     margin-bottom: 30px;
+    padding: 20px;
+}
+
+.upper {
+  color: black;
+}
+
+#mce-EMAIL {
+    border-radius: 0px;
 }
 
 section.call-to-action.text-white.text-center {
-    background: black;
+    background: #253345;
 }
 
 .follow-up {
     text-align: center;
 }
 
+video {
+      /* position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%; */
+      /* position:  */
+      position: absolute;
+      margin-top: 15px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -5;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+}
+
+@@media (min-width: 768px) {
+  video {
+    z-index: -100
+  }
+
+}
+
+.yellow::before {
+    background: rgba(36,51,68,0.80);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    position: absolute;
+}
+
+.tagline {
+  font-size: 20px;
+  line-height: 150%;
+  padding: 0 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 60px;
+}
+
+.tagline p {
+  line-height: 150%;
+}
+
  /* Rory's Edits*/
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Lato',Arial,sans-serif; }
 
 p {
   line-height: 1.75; }
@@ -224,11 +283,25 @@ body {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8), black);
 }*/
 
+@media (max-width: 767px) {
+  video {
+    display: none;
+  }
+  header.masthead {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg") !important;
+  }
+  .tagline {
+    margin: 0px;
+  }
+}
+
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/cranes.jpg");
+  /* background-image: url("../img/cranes.jpg"); */
+  /* background: rgba(36,51,68,0.80); */
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg");
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -261,7 +334,7 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 240px;
+    padding-top: 180px;
     padding-bottom: 200px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
