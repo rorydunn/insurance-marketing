@@ -99,7 +99,7 @@ a.btn.btn-primary.free-trial {
 }
 
 .upper {
-  color: black;
+  color: #253345;
 }
 
 #mce-EMAIL {
@@ -161,6 +161,10 @@ video {
 
 .tagline p {
   line-height: 150%;
+}
+
+body {
+  color: #253345;
 }
 
  /* Rory's Edits*/
@@ -300,8 +304,10 @@ header.masthead {
   color: white;
   /* background-image: url("../img/cranes.jpg"); */
   /* background: rgba(36,51,68,0.80); */
+
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg");
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black);
+  /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black); */
+  background: rgba(36,51,68,0.80);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
