@@ -228,9 +228,6 @@ body {
   overflow-x: hidden;
   font-family: 'Lato',Arial,sans-serif; }
 
-.tagline p {
-  line-height: 1.75; }
-
 a {
   color: #E78C1E; }
   a.active, a:active, a:focus, a:hover {
