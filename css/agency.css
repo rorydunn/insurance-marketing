@@ -43,7 +43,7 @@
     border-radius: 4px;
 }
 
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 767px){
    .icon-bar {
        width: 23px;
        height: 3px;
@@ -341,29 +341,42 @@ body {
     display: none;
   }
   header.masthead {
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg") !important;
+    text-align: center;
+    color: white;
+    background-image: url(/wp-content/uploads/2017/10/lp_background.svg),linear-gradient(150deg,rgb(143, 150, 158) 10%,#263346 100%);
+    /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/svg_background.svg") !important; */
+    /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg") !important; */
+    /* background: rgba(36,51,68,0.80); */
   }
   .tagline {
     margin: 0px;
   }
+  .decor {
+   height: 70px;
+   margin-top: -70px;
+   margin-left: -15px;
+   margin-right: -15px;
+  }
 }
 
-header.masthead {
-  text-align: center;
-  color: white;
-  /* background-image: url("../img/cranes.jpg"); */
-  /* background: rgba(36,51,68,0.80); */
-
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg");
-  /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black); */
-  background: rgba(36,51,68,0.80);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+@media (min-width: 768px) {
+  header.masthead {
+    text-align: center;
+    color: white;
+    /* background-image: url("../img/cranes.jpg"); */
+    /* background: rgba(36,51,68,0.80); */
+    background-image: url(/wp-content/uploads/2017/10/lp_background.svg),linear-gradient(150deg,rgba(48,60,236,.88) 30%,#00ece7 100%);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black), url("../img/cranes.jpg");
+    /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.5), black); */
+    background: rgba(36,51,68,0.80);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+}
   header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px; }
