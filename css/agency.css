@@ -12,6 +12,12 @@
      border-radius: 1px;
  }
 
+ @media (min-width: 576px) {
+   .decor {
+     display: none !important;
+   }
+ }
+
  @media (min-width: 768px){
    .navbar-expand-lg .navbar-collapse {
        display: -ms-flexbox!important;
@@ -336,6 +342,7 @@ body {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8), black);
 }*/
 
+
 @media (max-width: 767px) {
   video {
     display: none;
@@ -360,6 +367,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .decor {
+    display: none;
+  }
   header.masthead {
     text-align: center;
     color: white;
