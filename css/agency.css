@@ -228,7 +228,7 @@ body {
   overflow-x: hidden;
   font-family: 'Lato',Arial,sans-serif; }
 
-p {
+.tagline p {
   line-height: 1.75; }
 
 a {
