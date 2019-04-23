@@ -7,6 +7,18 @@ orbs:
   welcome: circleci/welcome-orb@0.3.1
   cypress: cypress-io/cypress@1
 
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9.9
+    steps:
+      - checkout
+      - run:
+        name: Debug 1
+        command: pwd
+      - run:
+        name: Debug 2
+        command: ls
 # Orchestrate or schedule a set of jobs, see https://circleci.com/docs/2.0/workflows/
 workflows:
   # Name the workflow "Welcome"
@@ -15,3 +27,4 @@ workflows:
     jobs:
       - welcome/run
       - cypress/run
+      - build
