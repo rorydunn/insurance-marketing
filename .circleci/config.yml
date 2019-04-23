@@ -2,12 +2,12 @@
 version: 2.1
 jobs:
   build:
+    docker:
+      - image: circleci/node:9.9
     branches:
       only:
         - master
         - /rc-.*/
-    docker:
-      - image: circleci/node:9.9
     steps:
       - checkout
       - run: pwd
