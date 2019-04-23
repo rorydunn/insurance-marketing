@@ -7,6 +7,8 @@ jobs:
     steps:
       - checkout
       - run: pwd
+      - run: ls -la
+      - run: whoami
 # Use a package of configuration called an orb, see https://circleci.com/docs/2.0/orb-intro/
 orbs:
   # Declare a dependency on the welcome-orb
