@@ -11,10 +11,10 @@ jobs:
       - run: whoami
       - run: scripts/stage/stagedeploy.sh
   stage-deploy:
-    branches:
-      only: master
     docker:
       - image: circleci/node:9.9
+    branches:
+      only: master
     steps:
       -checkout
 # Use a package of configuration called an orb, see https://circleci.com/docs/2.0/orb-intro/
