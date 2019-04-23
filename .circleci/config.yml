@@ -33,11 +33,11 @@ jobs:
 #   cypress: cypress-io/cypress@1
 
 # Orchestrate or schedule a set of jobs, see https://circleci.com/docs/2.0/workflows/
-workflows:
-  # Name the workflow "Welcome"
-  Welcome:
-    # Run the welcome/run job in its own container
-    jobs:
-      - welcome/run
-      - cypress/run
-      - build
+# workflows:
+#   # Name the workflow "Welcome"
+#   Welcome:
+#     # Run the welcome/run job in its own container
+#     jobs:
+#       - welcome/run
+#       - cypress/run
+#       - build
