@@ -11,9 +11,8 @@ jobs:
       - run: whoami
       - run: scripts/stage/stagedeploy.sh
   stage-deploy:
-    filters:
-      branches:
-        only: master
+    branches:
+      only: master
     docker:
       - image: circleci/node:9.9
     steps:
