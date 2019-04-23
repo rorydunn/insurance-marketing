@@ -2,6 +2,10 @@
 version: 2.1
 jobs:
   build:
+    branches:
+      only:
+        - master
+        - /rc-.*/
     docker:
       - image: circleci/node:9.9
     steps:
@@ -13,8 +17,6 @@ jobs:
   stage-deploy:
     docker:
       - image: circleci/node:9.9
-    branches:
-      only: master
     steps:
       -checkout
 # Use a package of configuration called an orb, see https://circleci.com/docs/2.0/orb-intro/
