@@ -20,7 +20,7 @@ jobs:
       only:
         - master
     steps:
-      -checkout
+      - checkout
       - run: pwd
       - run: ls -la
       - run: whoami
