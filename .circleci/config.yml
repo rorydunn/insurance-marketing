@@ -7,10 +7,6 @@ jobs:
         environment:
           ## this enables colors in the output
           TERM: xterm
-    branches:
-      only:
-        - master
-        - /rc-.*/
     steps:
       - checkout
       - run:
@@ -24,6 +20,10 @@ jobs:
   stage-deploy:
     docker:
       - image: circleci/node:9.9
+    branches:
+      only:
+        - master
+        - /rc-.*/
     steps:
       -checkout
 # Use a package of configuration called an orb, see https://circleci.com/docs/2.0/orb-intro/
