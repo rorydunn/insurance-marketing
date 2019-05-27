@@ -16,6 +16,9 @@ jobs:
   stage-deploy:
     docker:
       - image: circleci/node:9.9
+    # branches:
+    #   only:
+    #     - master
     steps:
       - checkout
       - run: pwd
@@ -24,9 +27,6 @@ jobs:
       - run: scripts/stage/stagedeploy.sh
 workflows:
   version: 2
-  branches:
-    only:
-      - master
   test_and_deploystage:
     jobs:
       - test

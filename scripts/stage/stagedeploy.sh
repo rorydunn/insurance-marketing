@@ -8,3 +8,4 @@ whoami
 pwd
 echo 'hello'
 git status
+git remote -v
