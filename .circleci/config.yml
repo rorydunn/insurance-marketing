@@ -1,11 +1,9 @@
-# Use the latest 2.1 version of CircleCI pipeline processing engine, see https://circleci.com/docs/2.0/configuration-reference/
-version: 2
+version: 2.1
 jobs:
   test:
     docker:
       - image: cypress/base:8
         environment:
-          ## this enables colors in the output
           TERM: xterm
     steps:
       - checkout
@@ -13,23 +11,9 @@ jobs:
           name: Install Dependencies
           command: npm ci
       - run: $(npm bin)/cypress run
-  stage-deploy:
-    docker:
-      - image: circleci/node:9.9
-    # branches:
-    #   only:
-    #     - master
-    steps:
-      - checkout
-      - run: pwd
-      - run: ls -la
-      - run: whoami
-      - run: scripts/stage/stagedeploy.sh
+
 workflows:
   version: 2
-  test_and_deploystage:
+  primary:
     jobs:
       - test
-      - stage-deploy:
-          requires:
-            - test
